@@ -1,0 +1,11 @@
+<template name='post-item'>
+  <view class='artical-container'>
+      <view class='artical-head'>
+        <image wx:if='{{true}}' class='artical-logo' src='{{logo}}'></image>
+        <text class='artical-date'>{{date}}</text>
+      </view>
+      <text class='artical-title'>{{title}}</text>
+      <image class='artical-img' src='{{img}}'></image>
+      <text class='artical-content'>{{content}}</text>
+  </view>
+</template>

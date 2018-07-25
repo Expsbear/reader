@@ -1,0 +1,21 @@
+<import src='./post-item/post-item-template' />
+<view class='page'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000"       indicator-active-color="red" circular="true">
+    <swiper-item>
+      <image src='/images/swiper_img_1.jpg'></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/swiper_img_2.png'></image>
+    </swiper-item> 
+    <swiper-item>
+      <image src='/images/swiper_img_3.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for='{{postsData}}'>
+    <!-- template     -->
+    <view catchtap='onPostTap' data-postId='{{item.postId}}'>
+      <template is='post-item' data='{{...item}}' />
+    </view>
+  </block>
+</view>
