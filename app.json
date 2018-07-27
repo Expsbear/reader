@@ -1,12 +1,12 @@
 {
   "pages": [
-    "map/map",
     "pages/welcome/welcome",
     "pages/movies/movies",
     "pages/movies/more-movie/more-movie",
     "pages/movies/movie-detail/movie-detail",
     "pages/posts/post",
-    "pages/posts/post-detail/post-detail"
+    "pages/posts/post-detail/post-detail",
+    "map/map"
     
   ],
   "window": {
